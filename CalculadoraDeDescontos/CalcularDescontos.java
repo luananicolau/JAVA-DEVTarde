@@ -1,3 +1,4 @@
+package CalculadoraDeDescontos;
 public class CalcularDescontos {
 
     public void calcula20(){
