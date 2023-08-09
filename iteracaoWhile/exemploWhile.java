@@ -1,0 +1,48 @@
+package iteracaoWhile;
+
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class exemploWhile {
+    Scanner sc= new Scanner(System.in);
+
+    public void exemplo1(){
+    int i=0; 
+    while(i<10){
+    System.out.println("O n° da Iteração é "+i);
+    i++;//i=i+i; i+=1;
+
+     }
+    }
+    public void exemplo2(){
+        int vetor[]= new int[10];
+        int i=0;
+        while(i<10){
+            System.out.println("Informe o valor do vetor["+i+"]=");
+            vetor[i]=sc.nextInt();
+            i++;
+        }
+        while(i>0){
+            i--;
+            System.out.println("vetor["+i+"]="+vetor[i]);
+
+        }
+    }
+    public void exemplo3(){
+        Random rd = new Random();
+        int nAleatorio = rd.nextInt(10)+1;
+        boolean tenteNovamente = true;
+        while(tenteNovamente){
+            System.out.println("Digite um n° de 1 a 10");
+            int nDigitado = sc.nextInt();
+        if(nDigitado==nAleatorio){
+            System.out.println("VOCE ACERTOU");
+        tenteNovamente = false;
+
+        } else{
+        System.out.println("VOCE ERROU");
+    }   
+    }
+    }
+  }
